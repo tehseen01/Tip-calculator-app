@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./SASS/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="./images/logo.svg" alt="" />
+      </header>
+      <article>
+        <div class="bill-calculate">
+          <label for="bill">Bill</label>
+          <div class="input-box">
+            <input type="number" id="bill" placeholder="0" />
+            <img src="./images/icon-dollar.svg" alt="" />
+          </div>
+          <div class="set-tip">
+            <div class="label">Select Tip %</div>
+            <button value="5" class="tip-btn">5%</button>
+            <button value="10" class="tip-btn">10%</button>
+            <button value="15" class="tip-btn">15%</button>
+            <button value="25" class="tip-btn">25%</button>
+            <button value="50" class="tip-btn">50%</button>
+            <input
+              type="number"
+              class="tip-btn custom-btn"
+              placeholder="Custom"
+            />
+          </div>
+          <label for="count-people">Number of People</label>
+          <div class="input-box people">
+            <input type="number" id="count-people" placeholder="0" />
+            <img src="./images/icon-person.svg" alt="" />
+            <p id="error-message">Can't be zero</p>
+          </div>
+        </div>
+        <div class="tip-show-container">
+          <div class="tip-amount flex">
+            <div>Tip Amount<span>/ person</span></div>
+            <h2 id="show-tip-amount">$0.00</h2>
+          </div>
+          <div class="total-amount flex">
+            <div>Total <span>/ person</span></div>
+            <h2 id="show-total-amount">$0.00</h2>
+          </div>
+          <div class="reset-box">
+            <button class="reset-btn" id="reset">Reset</button>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
