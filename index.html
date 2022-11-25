@@ -27,14 +27,15 @@
           <div class="input-box">
             <input type="number" id="bill" placeholder="0" />
             <img src="./images/icon-dollar.svg" alt="" />
+            <p id="bill-error" class="error-message">Please enter your bill</p>
           </div>
           <div class="set-tip">
             <div class="label">Select Tip %</div>
-            <button value="5" class="tip-btn">5%</button>
-            <button value="10" class="tip-btn">10%</button>
-            <button value="15" class="tip-btn">15%</button>
-            <button value="25" class="tip-btn">25%</button>
-            <button value="50" class="tip-btn">50%</button>
+            <button value="5" class="tip-btn select-tip">5%</button>
+            <button value="10" class="tip-btn select-tip">10%</button>
+            <button value="15" class="tip-btn select-tip">15%</button>
+            <button value="25" class="tip-btn select-tip">25%</button>
+            <button value="50" class="tip-btn select-tip">50%</button>
             <input
               type="number"
               class="tip-btn custom-btn"
@@ -45,7 +46,7 @@
           <div class="input-box people">
             <input type="number" id="count-people" placeholder="0" />
             <img src="./images/icon-person.svg" alt="" />
-            <p id="error-message">Can't be zero</p>
+            <p id="people-error" class="error-message">Can't be zero</p>
           </div>
         </div>
         <div class="tip-show-container">
